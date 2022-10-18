@@ -42,25 +42,41 @@ let yigindiIkki=0
 
 let dostSon=function (){
     for(let i=2;i<=naturalSon;i++){
-        for(let j=1;j<=i;j++){
+        for(let j=1;j<i;j++){
             if(i%j===0){
                 yigindiBir=yigindiBir+j
             }
         }
-        for (let k=1;k<=yigindiBir;k++){
-            if(yigindiBir%k===0){
-                yigindiIkki=yigindiIkki+k
+        if(yigindiBir<=naturalSon){
+            for (let k=1;k<yigindiBir;k++){
+                if(yigindiBir%k===0){
+                    yigindiIkki=yigindiIkki+k
+                }
             }
-        }
-        if(yigindiBir===yigindiIkki){
-            console.log(yigindiBir,yigindiIkki)
+            if(i===yigindiIkki && yigindiBir!==yigindiIkki){
+                console.log(yigindiIkki,
+                    yigindiBir)
+            }
         }
         yigindiBir=0;
         yigindiIkki=0
     }
 }
-
 dostSon()
+
+
+let tavakkal=220;
+let yig=0;
+let bulYig=function (){
+    for (let i=1;i<tavakkal;i++){
+        if(tavakkal%i===0){
+            yig=yig+i
+        }
+    }
+    console.log(yig)
+}
+
+// bulYig()
 
 
 
