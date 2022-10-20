@@ -62,7 +62,7 @@ let dostSon=function (){
         yigindiIkki=0
     }
 }
-dostSon()
+// dostSon()
 
 
 let tavakkal=220;
@@ -78,6 +78,23 @@ let bulYig=function (){
 
 // bulYig()
 
+
+
+let arr=[10,20,15,7,100,60,22,17]
+let max=arr[0];
+const getMax=function (){
+    for (let i=1;i<arr.length;i++){
+        if(max>arr[i]){
+            max===max
+        }
+        else{
+            max=arr[i]
+        }
+    }
+    console.log(max)
+}
+
+getMax()
 
 
 
